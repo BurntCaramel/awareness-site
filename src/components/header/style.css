@@ -5,8 +5,8 @@
 	width: 100%;
 	height: 56px;
 	padding: 0;
-	background: #673AB7;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	background: rgb(140, 0, 75);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.333);
 	z-index: 50;
 }
 
@@ -21,8 +21,10 @@
 }
 
 .header nav {
-	float: right;
+	/* float: right; */
+	margin: auto;
 	font-size: 100%;
+	font-weight: 500;
 }
 
 .header nav a {

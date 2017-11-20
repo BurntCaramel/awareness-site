@@ -1,13 +1,14 @@
 import { h, Component } from 'preact';
 import style from './style';
+import Code from '../../components/code'
 
 export default class Home extends Component {
 	render() {
 		return (
-			<div class={style.home}>
-				<h1>Home</h1>
-				<p>This is the Home component.</p>
-			</div>
+			<main class={style.home}>
+				<h1>Awareness</h1>
+				<p>Bring your components to life with loaded data, animation.</p>
+			</main>
 		);
 	}
 }
