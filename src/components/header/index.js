@@ -8,7 +8,7 @@ export default class Header extends Component {
 			<header class={style.header}>
 				<h1>»α«</h1>
 				<nav>
-					<Link activeClassName={style.active} href="/">Overview</Link>
+					<Link activeClassName={style.active} href="/">Intro</Link>
 					<Link activeClassName={style.active} href="/handlers">Handlers</Link>
 					<Link activeClassName={style.active} href="/react">React</Link>
 					<Link activeClassName={style.active} href="/preact">Preact</Link>
