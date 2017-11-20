@@ -8,11 +8,20 @@ export default class Handlers extends Component {
 			<main class={style.handlers}>
 				<h1>Awareness Handlers</h1>
 
-				<p>There are several options available for handlers.</p>
+				<p>There are several options to choose for writing handlers. Handlers are pure functions that take the previous state and transform it in some way.</p>
+				
+				<p>You have the full power of ES6 available: <strong>async</strong> functions, <strong>generator</strong> functions, or just a good old-fashioned function. You can even create a generator function that <strong>yields promises</strong> (great for animation).</p>
 
-				<p>They range from functions that return new state, to generator functions that yield Promises, and everything in between.</p>
+				<ul>
+					<li><a href="#function">Function returning new state</a></li>
+					<li><a href="#function-transform">Function returning function that transforms old state to new state</a></li>
+					<li><a href="#async-transform">Async function returning new state</a></li>
+					<li><a href="#generator-function">Generator function yielding new state</a></li>
+					<li><a href="#generator-function-transform">Generator function yielding function that transforms old state to new state</a></li>
+					<li><a href="#generator-function-promise">Generator function yielding Promise resolving to new state</a></li>
+				</ul>
 
-				<h2>Function returning new state</h2>
+				<h2 id="function">Function returning new state</h2>
 				<Code children={
 `
 const changeCarrots = () => ({
@@ -21,7 +30,7 @@ const changeCarrots = () => ({
 `
 				} />
 
-				<h2>Function returning function that transforms old state to new state</h2>
+				<h2 id="function-transform">Function returning function that transforms old state to new state</h2>
 				<Code children={
 `
 const addCarrots = () => ({ carrots }) => ({
@@ -30,7 +39,7 @@ const addCarrots = () => ({ carrots }) => ({
 `
 				} />
 
-				<h2>Async function returning new state</h2>
+				<h2 id="async-function">Async function returning new state</h2>
 				<Code children={
 `
 const changeCarrotsInFuture = async () => {
@@ -38,15 +47,6 @@ const changeCarrotsInFuture = async () => {
 	const data = res.json()
 	return { carrots: data.carrots }
 }
-`
-				} />
-
-				<h2>Async function returning new state</h2>
-				<Code children={
-`
-const addCarrots = () => ({ carrots }) => ({
-	carrots: carrots + 10
-})
 `
 				} />
 
@@ -62,7 +62,7 @@ const changeCarrotsInFuture = () => {
 `
 } />
 
-				<h2>Generator function yielding new state</h2>
+				<h2 id="generator-function">Generator function yielding new state</h2>
 				<Code children={
 `
 // Will update state on each frame: 0, 1, 2, 3, 4, 5
@@ -77,7 +77,7 @@ function * animateCarrotsZeroToFive() {
 `
 				} />
 
-				<h2>Generator function yielding function that transforms old state to new state</h2>
+				<h2 id="generator-function-transform">Generator function yielding function that transforms old state to new state</h2>
 				<Code children={
 `
 // Will update state for 10 frames: carrots+1, carrots+2, … carrots+9, carrots+10
@@ -91,7 +91,7 @@ function * animateCarrotsByTen() {
 `
 				} />
 
-				<h2>Generator function yielding Promise resolving to new state</h2>
+				<h2 id="generator-function-promise">Generator function yielding Promise resolving to new state</h2>
 				<Code children={
 `
 // Will use result of fetching \`url\` and store it in state
