@@ -15,7 +15,7 @@ export default class Handlers extends Component {
 				<ul>
 					<li><a href="#function">Function returning new state</a></li>
 					<li><a href="#function-transform">Function returning function that transforms old state to new state</a></li>
-					<li><a href="#async-transform">Async function returning new state</a></li>
+					<li><a href="#async-function">Async function returning new state</a></li>
 					<li><a href="#generator-function">Generator function yielding new state</a></li>
 					<li><a href="#generator-function-transform">Generator function yielding function that transforms old state to new state</a></li>
 					<li><a href="#generator-function-promise">Generator function yielding Promise resolving to new state</a></li>
