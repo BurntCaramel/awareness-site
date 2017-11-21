@@ -25,12 +25,7 @@ main {
 	min-height: 100%;
 	width: 100%;
 	padding: 0 3vw;
-	padding-bottom: 4rem;
-}
-main:before {
-	content: '';
-	display: block;
-	height: 56px;
+	padding-bottom: 2rem;
 }
 
 pre, code {
