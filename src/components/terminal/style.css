@@ -1,0 +1,15 @@
+.pre {
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  hyphens: none;
+  padding: 1rem;
+  color: white;
+  background-color: #111;
+  border-radius: 0.25rem;
+}
+
+.comment {
+  color: #888;
+}

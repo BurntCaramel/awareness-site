@@ -1,6 +1,7 @@
 import { h, Component } from 'preact';
 import style from './style';
 import Code from '../../components/code'
+import Terminal from '../../components/terminal'
 
 export default class Home extends Component {
 	render() {
@@ -15,11 +16,28 @@ export default class Home extends Component {
 				<p>Core is <a href="https://bundlephobia.com/result?p=awareness">less than 1 KB gzipped</a>.</p>
 
 				<h2>Installation</h2>
-				<ul>
-					<li><strong>React:</strong> <code>yarn add react-organism</code></li>
-					<li><strong>Preact:</strong> <code>yarn add preact-organism</code></li>
-					<li><strong>Redux:</strong> <code>yarn add redux-organism</code></li>
-				</ul>
+				<dl>
+					<dt>React:</dt>
+					<dd><Terminal>
+						<Terminal.Command>yarn add react-organism</Terminal.Command>
+						<Terminal.Comment># or, if you're not using yarn</Terminal.Comment>
+						<Terminal.Command>npm install -S react-organism</Terminal.Command>
+					</Terminal></dd>
+
+					<dt>Preact:</dt>
+					<dd><Terminal>
+						<Terminal.Command>yarn add preact-organism</Terminal.Command>
+						<Terminal.Comment># or, if you're not using yarn</Terminal.Comment>
+						<Terminal.Command>npm install -S preact-organism</Terminal.Command>
+					</Terminal></dd>
+
+					<dt>Redux:</dt>
+					<dd><Terminal>
+						<Terminal.Command>yarn add redux-organism</Terminal.Command>
+						<Terminal.Comment># or, if you're not using yarn</Terminal.Comment>
+						<Terminal.Command>npm install -S redux-organism</Terminal.Command>
+					</Terminal></dd>
+				</dl>
 
 				<div>
 					<h2>Minesweeper clone</h2>
