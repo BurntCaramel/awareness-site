@@ -9,7 +9,7 @@ export default class Home extends Component {
 			<main class={style.home}>
 				<h1>Awareness</h1>
 
-				<p>Bring your components to life with loaded data, animation, and multi-step asynchronous actions.</p>
+				<p>Bring your components to life with loaded data, multi-step animations, and async actions.</p>
 
 				<p>Works with <strong>React</strong>, <strong>Preact</strong> & <strong>Redux</strong>.</p>
 

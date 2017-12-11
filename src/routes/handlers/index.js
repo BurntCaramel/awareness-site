@@ -6,7 +6,7 @@ export default class Handlers extends Component {
 	render() {
 		return (
 			<main class={style.handlers}>
-				<h1>Awareness Handlers</h1>
+				<h1>Writing Handlers</h1>
 
 				<p>There are several options to choose for writing handlers. Handlers are pure functions that take the previous state and transform it in some way.</p>
 				
