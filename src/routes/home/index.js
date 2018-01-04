@@ -9,9 +9,15 @@ export default class Home extends Component {
 			<main class={style.home}>
 				<h1>Awareness</h1>
 
-				<p>Bring your components to life with loaded data, multi-step animations, and async actions.</p>
+				<p>Bring your components to life with loaded data, animations, and async actions.</p>
 
-				<p>Works with <strong>React</strong>, <strong>Preact</strong> & <strong>Redux</strong>.</p>
+				<p>Works with
+						<strong><a href="https://github.com/RoyalIcing/react-organism">React</a></strong>
+						{', '}
+						<strong><a href="https://github.com/RoyalIcing/preact-organism">Preact</a></strong>
+						{' & '}
+						<strong><a href="https://github.com/RoyalIcing/redux-organism">Redux</a></strong>.
+					</p>
 
 				<p>Core is <a href="https://bundlephobia.com/result?p=awareness">less than 1 KB gzipped</a>.</p>
 
