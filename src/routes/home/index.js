@@ -11,7 +11,8 @@ export default class Home extends Component {
 
 				<p>Bring your components to life with loaded data, animations, and async actions.</p>
 
-				<p>Works with
+				<p>
+						{'Works with '}
 						<strong><a href="https://github.com/RoyalIcing/react-organism">React</a></strong>
 						{', '}
 						<strong><a href="https://github.com/RoyalIcing/preact-organism">Preact</a></strong>
