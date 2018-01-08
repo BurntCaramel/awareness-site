@@ -27,6 +27,8 @@ html, body {
 main {
 	min-height: 100%;
 	width: 100%;
+	max-width: 44rem;
+	margin: auto;
 	padding: 0 3vw;
 	padding-bottom: 2rem;
 }
