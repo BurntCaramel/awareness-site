@@ -22,6 +22,11 @@ export default class Home extends Component {
 
 				<p>Core is <a href="https://bundlephobia.com/result?p=awareness">less than 1 KB gzipped</a>.</p>
 
+				<h2>Examples</h2>
+				<ul>
+					<li><a href="http://minesweeter.netlify.com/">💣 Minesweeper Clone</a></li>
+				</ul>
+
 				<h2>Installation</h2>
 				<dl>
 					<dt>React:</dt>
