@@ -46,15 +46,17 @@ export default class Home extends Component {
 					</Terminal></dd>
 				</dl>
 
-				<div>
-					<h2>Minesweeper clone</h2>
-					<iframe src="https://codesandbox.io/embed/github/RoyalIcing/minesweeter/tree/master/?fontsize=13&hidenavigation=1&module=%models%2Fgame.js" style="width:100%; height:740px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
-				</div>
+				{ false && <div>
+						<h2>Minesweeper clone</h2>
+						<iframe src="https://codesandbox.io/embed/github/RoyalIcing/minesweeter/tree/master/?fontsize=13&hidenavigation=1&module=%models%2Fgame.js" style="width:100%; height:740px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</div>
+				}
 
-				<div>
-					<h2>Counter</h2>
-					<iframe src="https://codesandbox.io/embed/61l8893lyw?fontsize=13&hidenavigation=1&module=%2Fstate%2Fcounter.js" style="width:100%; height:240px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
-				</div>
+				{ false && <div>
+						<h2>Counter</h2>
+						<iframe src="https://codesandbox.io/embed/61l8893lyw?fontsize=13&hidenavigation=1&module=%2Fstate%2Fcounter.js" style="width:100%; height:240px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</div>
+				}
 
 				<h2>To Do List:</h2>
 				<Code children={
